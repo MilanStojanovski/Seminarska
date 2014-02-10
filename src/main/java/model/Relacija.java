@@ -6,7 +6,7 @@ public class Relacija {
 
 	public String from;//grad na trgnuvanje
 	public String to;//
-	public String company;
+	
 	public Date date;//datum na trgnuvanje
 	public String timeD;//vreme na trganje
 	public String timeA;//
