@@ -1,6 +1,7 @@
 package model;
 
 import java.sql.Date;
+import java.util.List;
 
 public class Relacija {
 
@@ -8,11 +9,19 @@ public class Relacija {
 	public String to;//
 	
 	public Date date;//datum na trgnuvanje
-	public String timeD;//vreme na trganje
-	public String timeA;//
+	
 	public int priceOne;//cena edna nasoka
 	public int priceReturn;//cena povraten
 	public boolean direct;//direkten?
+	
+	public List<String> goesThrough;//niz koi gradovi vrvi
+	
+	public List<String> getGoesThrough() {
+		return goesThrough;
+	}
+	public void setGoesThrough(List<String> goesThrough) {
+		this.goesThrough = goesThrough;
+	}
 	public String getFrom() {
 		return from;
 	}
@@ -32,18 +41,7 @@ public class Relacija {
 	public void setDate(Date date) {
 		this.date = date;
 	}
-	public String getTimeD() {
-		return timeD;
-	}
-	public void setTimeD(String timeD) {
-		this.timeD = timeD;
-	}
-	public String getTimeA() {
-		return timeA;
-	}
-	public void setTimeA(String timeA) {
-		this.timeA = timeA;
-	}
+	
 	public int getPriceOne() {
 		return priceOne;
 	}
