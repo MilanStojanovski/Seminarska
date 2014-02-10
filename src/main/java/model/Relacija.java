@@ -25,12 +25,7 @@ public class Relacija {
 	public void setTo(String to) {
 		this.to = to;
 	}
-	public String getCompany() {
-		return company;
-	}
-	public void setCompany(String company) {
-		this.company = company;
-	}
+	
 	public Date getDate() {
 		return date;
 	}
